@@ -1,0 +1,19 @@
+{
+  "name": "demo-project",
+  "version": "1.0.0",
+  "description": "test node",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimmyex500sl/testNode"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
