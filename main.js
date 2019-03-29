@@ -32,7 +32,7 @@ arduinoSerialPort.on('open',function() {
 
 app.get('/', function (req, res) {
 
-    return res.send('Working');
+    res.send('<h1>Working on express<\h1>');
  
 })
 
