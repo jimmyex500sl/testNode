@@ -1,0 +1,101 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io('http://localhost:8080');
+
+    //1. 
+    socket.on('Ping', function (data) {
+        console.log(data);
+        document.writeln(data+'<br />');
+
+    });
+
+
+
+    //2. 3. 10.
+    //socket.on('Ping', function (data) {
+    //    document.writeln('Ping : ' + data + '<br />');
+    //});
+
+    //4.
+    //socket.on('Ping', function (data) {
+    //    document.writeln('Ping : ' + data.myObjectKey + '<br />');
+    //});
+
+    //5. Calling a function on the server
+    //socket.emit('Pong');
+
+    //6. Calling a function on the server with a parameter
+    //socket.emit('Pong', 101);
+
+    //7. Calling a function on the server with an object parameter
+    //socket.emit('Pong', { anotherObjectKey: 102 });
+
+    //8 Ping Pong
+    //socket.on('Ping', function (data) {
+    //    document.writeln('Ping : ' + data + '<br />');
+    //    data++;
+    //    socket.emit('Pong', data);
+    //});
+
+    //9 setTimeout
+    //socket.on('Ping', function (data) {
+    //    document.writeln('Ping : ' + data + '<br />');
+    //    data++;
+    //    setTimeout(function () { socket.emit('Pong', data); }, 1000);
+    //});
+    
+ 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+     //socket.emit('Pong');
+
+socket.on('WriteNumber', function (data) {
+    document.getElementById('testArea').innerHTML += data + "<br />";
+});
+
+socket.on('WriteString', function (data) {
+    document.getElementById('testArea').innerHTML += data + "<br />";
+});
+
+socket.on('WriteObject', function (data) {
+    document.getElementById('testArea').innerHTML += data.myObjectsKey + "<br />";
+});
+
+socket.on('CreateAlert', function (data) {
+    alert(data);
+});
+
+socket.on('WriteObject', function (data) {
+    document.getElementById('testArea').innerHTML += data.myObjectsKey + "<br />";
+});
+
+socket.on('EvalFunction', function (data) {
+    eval(data);
+});
+
+socket.on('updateCounter', function (data) {
+    document.getElementById('testArea').innerHTML += "my server side counter = " + data + "<br />";
+});
+
+setInterval("sendPing();", 1000);
+function sendPing(e) {
+    socket.emit('ping', { property1: 'this is a string value' });
+}
+socket.on('pong', function (data) {
+    document.getElementById('testArea').innerHTML += "new incoming pong = " + data.property2 + "<br />";
+});
+
+
+-->
