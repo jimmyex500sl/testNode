@@ -8,11 +8,13 @@
     "url": "https://github.com/jimmyex500sl/testNode"
   },
   "dependencies": {
+    "@serialport/parser-readline": "^2.0.2",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
     "multer": "^1.4.1",
+    "scramjet": "^4.22.3",
     "serialport": "^7.1.4"
   },
   "devDependencies": {},
