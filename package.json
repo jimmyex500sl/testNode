@@ -15,7 +15,8 @@
     "jquery": "^3.3.1",
     "multer": "^1.4.1",
     "scramjet": "^4.22.3",
-    "serialport": "^7.1.4"
+    "serialport": "^7.1.4",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {},
   "scripts": {
