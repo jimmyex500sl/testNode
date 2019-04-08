@@ -1,0 +1,12 @@
+h1 {
+    color: rgb(47, 0, 255);
+    font-family: verdana;
+    font-size: 300%;
+
+}
+
+p {
+    font-family: courier;
+    font-weight: bold;
+    font-size: 120%;
+}
